@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ededed;
+  width: 100%;
+}
+
+
+.mention-content {
+  background: rgba(7, 85, 91, 0.634);
+  width: 90%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 100px auto;
+  padding-bottom: 100px;
+  
+}
+
+.sub-title {
+  text-align: left;
+    font-size: clamp(20px, 8vw, 50px);
+  color: #fff;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.sub-title span {
+  color: #0ef;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.mention-content p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.5;
+  padding: 10px 0;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 3s;
+}

@@ -1,0 +1,229 @@
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 92px 12px 164px;
+}
+.faq-section__header {
+  text-align: center;
+}
+.faq-section__surtitle {
+  font-family: open sans, sans-serif;
+  margin-bottom: 50px;
+}
+.faq-section__title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+.faq__questions-list {
+  list-style: none;
+}
+.faq__question {
+  border-bottom: 4px dotted #111;
+}
+
+.faq__question-toggler {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #111;
+  padding: 24px 0;
+  cursor: pointer;
+}
+.faq__question-toggler-icon--active {
+  transform: rotate(90deg);
+}
+.faq__question-toggler-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.faq__question-toggler-icon,
+.faq__question-toggler-text {
+  pointer-events: none;
+}
+
+.faq__question-toggler-text {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.faq__question-toggler-question-mark {
+  color: midnightblue;
+}
+/* Animation de "hauteur" avec CSS Grid */
+.faq__content-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  opacity: 0;
+  transition: 
+  visibility 400ms ease,
+  opacity 400ms ease,
+  grid-template-rows 400ms ease;
+}
+.faq__content-container--active {
+  visibility: visible;
+  opacity: 1;
+  grid-template-rows: 1fr;
+}
+.faq__content {
+  overflow: hidden;
+}
+
+.faq__content-text {
+  color: #111;
+  line-height: 1.6;
+  font-size: 18px;
+  padding-bottom: 28px;
+}
+
+.faq__link {
+  color: #111;
+  font-weight: 500;
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 800px) {
+  .faq-section {
+    padding: 74px 12px 142px;
+  }
+  .faq__question {
+    border-bottom: 3px dotted #111;
+  }
+  .faq__question-toggler {
+    padding: 16px 0;
+  }
+  .faq__question-toggler-text {
+    font-size: 18px;
+  }
+  .faq__question-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .faq-section {
+    padding: 84px 12px 142px;
+  }
+  .faq__question {
+    border-bottom: 2px dotted #111;
+  }
+  .faq__question-toggler {
+    padding: 12px 0;
+  }
+  .faq__question-toggler-text {
+    font-size: 16px;
+  }
+  .faq__question-text {
+    font-size: 14px;
+  }
+}
+
+/* ...existing code... */
+.feedback-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.feedback-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Augmenté l'espace entre les boutons */
+    margin-top: 15px; /* Augmenté la marge */
+}
+
+.feedback-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px; /* Augmenté le padding */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.feedback-btn i {
+    font-size: 32px; /* Augmenté la taille de l'icône */
+    color: #0ef;
+}
+
+.feedback-btn:hover {
+    background: rgba(0, 238, 255, 0.1);
+}
+
+.feedback-btn.selected {
+    background: #0ef;
+}
+
+.feedback-btn.selected i {
+    color: white;
+}
+
+/* ...existing code... */
+
+.feedback-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 238, 255, 0.1);
+    border-radius: 8px;
+}
+
+.stats-bars {
+    margin: 15px 0;
+}
+
+.stat-bar {
+    margin: 10px 0;
+    background: #f0f0f0;
+    border-radius: 20px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    position: absolute;
+    height: 100%;
+    background: #0ef;
+    transition: width 1s ease-in-out;
+}
+
+.stat-bar span {
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.total-votes {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* ...existing code... */
+
+.global-feedback-container {
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 238, 255, 0.05);
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.global-feedback-container h3 {
+    color: #0ef;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* ...existing code... */
+

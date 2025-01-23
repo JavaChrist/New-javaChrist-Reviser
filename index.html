@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+              'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-WQ3JSGMX');</script>
+        <!-- End Google Tag Manager -->
+      
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#ffffff">
+      
+        <!-- Title and Favicon -->
+        <title>Base | Développeur Web Freelance à Toulouse - Création de Sites Web Professionnels</title>
+        <link rel="shortcut icon" href="/assets/logo/favicon.ico" type="image/x-icon" />
+      
+        <!-- Meta Description for SEO -->
+        <meta name="description"
+          content="Expert en développement web à Toulouse, je crée des sites web sur mesure, modernes et optimisés. Spécialisé en UI/UX design, référencement SEO et solutions web innovantes." />
+      
+        <!-- Open Graph Data (Facebook, LinkedIn) -->
+        <meta property="og:url" content="https://www.javachrist.fr" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Christian Grohens - Développeur Web Freelance à Toulouse" />
+        <meta property="og:description"
+          content="Christian Grohens, développeur web freelance à Toulouse, crée des sites web performants, adaptés à vos besoins avec un design sur mesure et une optimisation SEO pour maximiser votre visibilité." />
+        <meta property="og:image" content="https://www.javachrist.fr/assets/images/thumbnail.jpg" />
+        <meta property="og:author" content="Christian Grohens" />
+        <meta property="og:publish_date" content="2024-10-13T19:00:00+00:00" />
+      
+        <!-- Twitter Card Data -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Christian Grohens - Développeur Web Freelance à Toulouse" />
+        <meta name="twitter:description"
+          content="Christian Grohens, développeur web freelance à Toulouse, vous accompagne dans la création de sites web professionnels et performants, alliant design, UX/UI et optimisation SEO." />
+        <meta name="twitter:image" content="https://www.javachrist.fr/assets/images/thumbnail.jpg" />
+        <meta name="twitter:creator" content="@javachrist" />
+      
+        <!-- Meta for Author and Publish Date -->
+        <meta name="author" content="Christian Grohens" />
+        <meta name="publish_date" content="2024-10-13T19:00:00+00:00" />
+
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/accueil.css">
+    <link rel="stylesheet" href="/chat.css">
+
+     <!-- Préchargement des polices -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet">
+
+    <style>
+        /* CSS de base et header (depuis style.css) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "poppins", sans-serif;
+        }
+
+        header {
+            padding: 10px 20px;
+            background: rgba(7, 85, 91, 0.747);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* CSS critique de la page d'accueil */
+        .home-content {
+            background: #051129b0;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 25px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: #fff;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+
+    <!-- CSS Non-critique avec chargement différé -->
+    <link rel="stylesheet" href="/chat.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/accueil.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" media="print"
+        onload="this.media='all'">
+
+    <!-- Ajouter avant les autres liens CSS -->
+    <link rel="preload" href="/style.css" as="style">
+    <link rel="preload" href="/script.js" as="script">
+
+    <!-- Polices avec swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+
+</head>
+
+<body>
+
+    <header>
+
+    <!-- Pour le logo dans le header -->
+    <div id="logo">
+        <picture>
+          <!-- Mobile -->
+          <source media="(max-width: 480px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-150x23.webp" type="image/webp">
+          <source media="(max-width: 480px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-150x23.png" type="image/png">
+  
+          <!-- Tablet -->
+          <source media="(max-width: 768px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-200x30.webp" type="image/webp">
+          <source media="(max-width: 768px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-200x30.png" type="image/png">
+  
+          <!-- Desktop -->
+          <source srcset="/assets/logo/Logo-Bandeau-JavaChrist-300x45.webp" type="image/webp">
+          <img src="/assets/logo/Logo-Bandeau-JavaChrist-300x45.png" alt="JavaChrist Logo Développeur Web à Toulouse"
+            width="300" height="45" fetchpriority="high">
+        </picture>
+      </div>
+  
+      <!-- Pour le badge Google AI -->
+      <div class="ai-badge">
+        <picture>
+          <!-- Mobile -->
+          <source media="(max-width: 768px)" srcset="/assets/logo/google-ai-essentials-40x40.webp" type="image/webp">
+          <source media="(max-width: 768px)" srcset="/assets/logo/google-ai-essentials-40x40.png" type="image/png">
+  
+          <!-- Desktop -->
+          <source srcset="/assets/logo/google-ai-essentials-60x60.webp" type="image/webp">
+          <img src="/assets/logo/google-ai-essentials-60x60.png" alt="Badge Google AI Essentials" width="60" height="60"
+            loading="lazy" class="ai-icon">
+        </picture>
+      </div>
+
+        <!-- /* navbar  * -->
+        <nav class="navbar" id="nav-links">
+            <a href="/index.html" style="--i: 1">Accueil</a>
+            <a href="/fr/blog.html" style="--i: 2">Blog</a>
+            <a href="/fr/info.html" style="--i: 3">Info</a>
+            <a href="/fr/services.html" style="--i: 4">Services</a>
+            <a href="/fr/projets.html" style="--i: 5">Projets</a>
+            <a href="/fr/contact.html" style="--i: 6">Contact</a>
+            <a href="/fr/faq.html" style="--i: 7">FAQ</a>
+        <a href="/fr/forum.html" style="--i: 8">Forum</a>
+        <a href="/en/home.html" style="--i: 9">English</a>
+        <a href="/fr/login.html" style="--i: 10">Login</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <i class="bx bx-menu"></i>
+        </div>
+        
+    </header>
+
+    <section class="home">
+
+        <div class="bloc">
+            <!-- Video -->
+            <video controls poster="/assets/image/vignette-video-developpeur-web.jpg" autoplay muted loop
+                preload="auto">
+                <source src="/assets/video/programmeur.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <!-- Image de remplacement pour les petits écrans -->
+            <img src="/assets/image/vignette-video-developpeur-web.jpg" class="background-image">
+
+            <div class="home-content">
+                <h1>Bonjour, Moi c'est</h1>
+                <h2>Christian Grohens</h2>
+                <h3>Je suis <span class="text"></span></h3>
+                <p>
+                    Je suis un développeur Web avec une expérience de plusieurs années.
+                    <br />Mon expertise inclut la création de sites web, la conception d'interfaces utilisateurs, et
+                    bien plus encore.
+                </p>
+                <a href="/fr/info.html" class="btn-box">En savoir plus</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ajout du bouton rond pour ouvrir la modal -->
+    <button id="chat-button" onclick="openChat()">💬</button>
+
+    <!-- Ajout de la modal du chat -->
+    <div id="chat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeChat()">&times;</span>
+            <div class="chat-header">
+                <div class="avatar">
+                    <img src="/assets/image/Avatar 4.png" alt="Avatar de Christian Grohens">
+                </div>
+                <p>Bonjour, je suis Christ, je suis là pour répondre à vos questions.</p>
+            </div>
+
+            <div id="chatbox" class="chatbox"></div>
+
+            <div id="input-container">
+                <input type="text" id="message" placeholder="Posez votre question ici...">
+                <button id="send">Envoyer</button>
+                <button id="close-chat" onclick="closeChat()">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <p id="copyright">&copy; <span id="year"></span> JavaChrist. Tous droits réservés.</p>
+
+        <div>
+            <a href="/fr/mentions-legales.html" class="license-link">
+                Mentions légales |
+            </a>
+            <a href="/fr/politique-confidentialite.html" class="license-link">Politique de confidentialité</a>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://twitter.com/Mis7erC" target="_blank" rel="noopener noreferrer" style="--i: 8">
+                <i class="bx bxl-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Suivez-moi sur Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com/in/javachrist/" target="_blank" rel="noopener noreferrer" style="--i: 9">
+                <i class="bx bxl-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">Suivez-moi sur LinkedIn</span>
+            </a>
+            <a href="https://github.com/JavaChrist" target="_blank" rel="noopener noreferrer" style="--i: 10">
+                <i class="bx bxl-github" aria-hidden="true"></i>
+                <span class="sr-only">Regardez mon travail sur Github</span>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/script.js"></script>
+    <script src="/accueil.js"></script>
+    <script src="/chat.js"></script>
+</body>
+
+</html>

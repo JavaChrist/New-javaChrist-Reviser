@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WQ3JSGMX');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Title and Favicon -->
+  <title>Base - Questions Fréquentes | JavaChrist - Développement Web</title>
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" type="image/x-icon" />
+
+  <!-- Meta Description for SEO -->
+  <meta name="description"
+    content="Trouvez les réponses à vos questions sur nos services de développement web, nos méthodes de travail, tarifs et processus de création de sites web à Toulouse." />
+
+  <!-- Open Graph Data (Facebook, LinkedIn) -->
+  <meta property="og:url" content="https://www.javachrist.fr" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FAQ - Questions Fréquentes | Christian Grohens - Développeur Web Toulouse" />
+  <meta property="og:description"
+    content="Trouvez les réponses à vos questions sur nos services de développement web, nos méthodes de travail et nos tarifs. Des informations claires pour comprendre notre approche." />
+  <meta property="og:image" content="https://www.javachrist.fr/assets/images/thumbnail.jpg" />
+  <meta property="og:author" content="Christian Grohens" />
+  <meta property="og:publish_date" content="2024-10-13T19:00:00+00:00" />
+
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FAQ - Questions Fréquentes | Christian Grohens - Développeur Web Toulouse" />
+  <meta name="twitter:description"
+    content="Trouvez les réponses à vos questions sur nos services de développement web, nos méthodes de travail et nos tarifs. Des informations claires pour comprendre notre approche." />
+  <meta name="twitter:image" content="https://www.javachrist.fr/assets/images/thumbnail.jpg" />
+  <meta name="twitter:creator" content="@javachrist" />
+
+  <!-- Meta for Author and Publish Date -->
+  <meta name="author" content="Christian Grohens" />
+  <meta name="publish_date" content="2024-10-13T19:00:00+00:00" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheets -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/faq.css" />
+
+  <!-- Polices avec swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+
+<body> 
+
+  <header>
+
+    <!-- Pour le logo dans le header -->
+    <div id="logo">
+      <picture>
+        <!-- Mobile -->
+        <source media="(max-width: 480px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-150x23.webp" type="image/webp">
+        <source media="(max-width: 480px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-150x23.png" type="image/png">
+
+        <!-- Tablet -->
+        <source media="(max-width: 768px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-200x30.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="/assets/logo/Logo-Bandeau-JavaChrist-200x30.png" type="image/png">
+
+        <!-- Desktop -->
+        <source srcset="/assets/logo/Logo-Bandeau-JavaChrist-300x45.webp" type="image/webp">
+        <img src="/assets/logo/Logo-Bandeau-JavaChrist-300x45.png" alt="JavaChrist Logo Développeur Web à Toulouse"
+          width="300" height="45" fetchpriority="high">
+      </picture>
+    </div>
+
+    <!-- Pour le badge Google AI -->
+    <div class="ai-badge">
+      <picture>
+        <!-- Mobile -->
+        <source media="(max-width: 768px)" srcset="/assets/logo/google-ai-essentials-40x40.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="/assets/logo/google-ai-essentials-40x40.png" type="image/png">
+
+        <!-- Desktop -->
+        <source srcset="/assets/logo/google-ai-essentials-60x60.webp" type="image/webp">
+        <img src="/assets/logo/google-ai-essentials-60x60.png" alt="Badge Google AI Essentials" width="60" height="60"
+          loading="lazy" class="ai-icon">
+      </picture>
+    </div>
+
+    <!-- /* navbar  * -->
+    <nav class="navbar" id="nav-links">
+      <a href="/index.html" style="--i: 1">Accueil</a>
+      <a href="/fr/blog.html" style="--i: 2">Blog</a>
+      <a href="/fr/info.html" style="--i: 3">Info</a>
+      <a href="/fr/services.html" style="--i: 4">Services</a>
+      <a href="/fr/projets.html" style="--i: 5">Projets</a>
+      <a href="/fr/contact.html" style="--i: 6">Contact</a>
+      <a href="/fr/faq.html" style="--i: 7">FAQ</a>
+        <a href="/fr/forum.html" style="--i: 8">Forum</a>
+        <a href="/en/home.html" style="--i: 9">English</a>
+        <a href="/fr/login.html" style="--i: 10">Login</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <i class="bx bx-menu"></i>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="faq-section">
+
+      <container class="faq-section__header">
+        <h1 class="faq-section__title">Foire aux questions</h1>
+        <p class="faq-section__surtitle">Cliquez sur les questions</p>
+      </container>
+
+      <article class="faq">
+
+        <ul class="faq__questions-list">
+
+          <li class="faq__question">
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-1"
+              id="accordion-btn1">
+              <img src="/assets/logo/chevron.svg" alt=""
+                class="faq__question-toggler-icon" />
+              <span class="faq__question-toggler-text">Quels types de sites web pouvez-vous créer ?</span>
+            </button>
+
+            <div class="faq__content-container faq__content-container" aria-labelledby="accordion-btn1"
+              id="content-container-1">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  Je propose la création de sites vitrines, de sites e-commerce, de pages de capture (landing pages), et
+                  de
+                  <strong>
+                    sites complets
+                    pour des entreprises, avec un focus sur le design moderne, l’ergonomie et la performance.</strong>
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+
+          <li class="faq__question">
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-2"
+              id="accordion-btn2">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Comment se déroule la collaboration avec vous ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-2" aria-labelledby="accordion-btn2">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  Le processus commence par un <a class="faq__link" href="/assets/Questionnaire.pdf" target="_blank">
+                    questionnaire </a>
+                  que je vous propose de remplir, <strong>suivi d'une réunion </strong> pour bien comprendre vos
+                  besoins.
+                  Ensuite, je crée une maquette
+                  du site, que <strong> nous
+                    validons ensemble.</strong> Une fois la maquette approuvée, je passe au développement et vous tiens
+                  informé de
+                  l’avancement.
+                  Enfin,<strong> après validation finale,</strong> le site est mis en ligne.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="faq__question">
+
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-3"
+              id="accordion-btn3">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Combien de temps prend la création d’un site ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-3" aria-labelledby="accordion-btn3">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  En fonction de la complexité du site, cela peut <strong> varier de 2 à 6 semaines.</strong> Un site
+                  vitrine simple peut
+                  être prêt en deux
+                  semaines, alors qu'un site plus complexe ou un e-commerce prend généralement un peu plus de temps.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="faq__question">
+
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-4"
+              id="accordion-btn4">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Quels sont vos tarifs pour la création d’un site ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-4" aria-labelledby="accordion-btn4">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  Mes tarifs varient en fonction de la complexité du projet. <strong> Pour avoir un devis
+                    précis,</strong> je vous invite
+                  à prendre<a class="faq__link" href="/fr/rdv.html" target="_blank">
+                    rendez-vous </a>
+                  pour discuter de vos besoins spécifiques.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="faq__question">
+
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-5"
+              id="accordion-btn5">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Quels modes de paiement acceptez-vous ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-5" aria-labelledby="accordion-btn5">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  J'accepte les paiements <strong> via virement bancaire, PayPal, et Stripe.</strong> Un acompte est
+                  demandé pour démarrer
+                  le projet, avec
+                  le solde à la livraison finale. D'autres options de paiement peuvent être envisagées si nécessaire.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+          <li class="faq__question">
+
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-6"
+              id="accordion-btn6">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Proposez-vous des services de maintenance après la création du site
+                ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-6" aria-labelledby="accordion-btn6">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  Oui, je propose des services de maintenance pour m'assurer que votre site est toujours performant et à
+                  jour. Je propose
+                  aussi <strong> des contrats de maintenance mensuels </strong>pour ceux qui souhaitent une gestion
+                  continue.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="faq__question">
+
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-7"
+              id="accordion-btn7">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Puis-je modifier moi-même le contenu de mon site après sa création
+                ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-7" aria-labelledby="accordion-btn7">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  Bien sûr ! Si vous le souhaitez, je peux <strong> intégrer un système de gestion de contenu (CMS)
+                  </strong>comme
+                  WordPress ou un CMS
+                  personnalisé pour que <strong> vous puissiez facilement mettre à jour le contenu de votre site
+                  </strong> sans
+                  connaissances techniques.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+
+          <li class="faq__question">
+
+            <button class="faq__question-toggler" aria-expanded="false" aria-controls="content-container-8"
+              id="accordion-btn8">
+              <img src="/assets/logo/chevron.svg" alt="" class="faq__question-toggler-icon" /><span
+                class="faq__question-toggler-text">Faites-vous du référencement (SEO) ?</span>
+            </button>
+
+            <div class="faq__content-container" id="content-container-8" aria-labelledby="accordion-btn8">
+
+              <div class="faq__content">
+                <p class="faq__content-text">
+                  Oui, nous proposons des services de référencement naturel (SEO) <strong> inclut dans la réalisation de
+                    votre site,</strong> pour améliorer la visibilité de votre
+                  site web sur les
+                  moteurs de recherche. Notre approche SEO inclut <strong> l'optimisation des mots-clés, la structure du
+                    site, le
+                    contenu, et les
+                    backlinks,</strong> afin d'augmenter votre positionnement organique.
+                  En plus du SEO, nous pouvons également gérer <strong>vos campagnes de publicité payante (SEA)</strong>
+                  sur des
+                  plateformes comme Google
+                  Ads <strong> pour un impact immédiat et ciblé.</strong> Que vous ayez besoin de référencement
+                  organique ou payant, nous
+                  adaptons nos
+                  services à vos objectifs et à votre budget.
+                </p>
+                <div class="feedback-container">
+                  <p>Cette réponse vous a-t-elle été utile ?</p>
+                  <div class="feedback-buttons">
+                    <button class="feedback-btn" data-value="yes">
+                      <i class='bx bx-like'></i>
+                    </button>
+                    <button class="feedback-btn" data-value="no">
+                      <i class='bx bx-dislike'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+        <!-- Remplacer le div feedback-container existant à la fin par: -->
+        <div class="global-feedback-container">
+          <h2 style="color: #0ef; margin-bottom: 15px;">Votre avis compte !</h2>
+          <p>Ces réponses vous ont-elles été utiles ? Aidez-nous à améliorer notre FAQ</p>
+          <div class="stats-bars">
+            <div class="stat-bar">
+              <div class="stat-fill" style="width: 0%"></div>
+              <span>👍 0% (0)</span>
+            </div>
+            <div class="stat-bar">
+              <div class="stat-fill" style="width: 0%"></div>
+              <span>👎 0% (0)</span>
+            </div>
+          </div>
+          <p class="total-votes">Total des votes : 0</p>
+        </div>
+
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p id="copyright">&copy; <span id="year"></span> JavaChrist. Tous droits réservés.</p>
+
+    <div>
+        <a href="/fr/mentions-legales.html" class="license-link">
+            Mentions légales |
+        </a>
+        <a href="/fr/politique-confidentialite.html" class="license-link">Politique de confidentialité</a>
+    </div>
+
+    <div class="home-sci">
+        <a href="https://twitter.com/Mis7erC" target="_blank" rel="noopener noreferrer" style="--i: 8">
+            <i class="bx bxl-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Suivez-moi sur Twitter</span>
+        </a>
+        <a href="https://www.linkedin.com/in/javachrist/" target="_blank" rel="noopener noreferrer" style="--i: 9">
+            <i class="bx bxl-linkedin" aria-hidden="true"></i>
+            <span class="sr-only">Suivez-moi sur LinkedIn</span>
+        </a>
+        <a href="https://github.com/JavaChrist" target="_blank" rel="noopener noreferrer" style="--i: 10">
+            <i class="bx bxl-github" aria-hidden="true"></i>
+            <span class="sr-only">Regardez mon travail sur Github</span>
+        </a>
+    </div>
+
+</footer>
+  
+  <script src="/faq.js"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>

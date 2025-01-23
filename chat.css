@@ -1,0 +1,117 @@
+/* Bouton d'appel au chat (inchangé) */
+#chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: clamp(40px, 4vw, 50px);
+  height: clamp(40px, 4vw, 50px);
+  border-radius: 50%;
+  background-color: #09484d;
+  color: white;
+  font-size: clamp(20px, 3vw, 30px);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+#chat-button:hover {
+  background-color: #073739;
+}
+
+/* Modale : ouverture complète sur la droite */
+.modal {
+  display: none;
+  position: fixed;
+  top: 10vh;
+  right: 2vw;
+  width: 90vw;
+  max-width: 400px;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  width: 100%; /* La modale occupe toute la largeur définie */
+  height: 100%;
+  border-radius: 10px; /* Coins arrondis en bas */
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  background-color: #37757a;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style de l'avatar */
+.avatar img {
+  width: clamp(40px, 6vw, 90px);
+  height: clamp(40px, 6vw, 90px);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #073739;
+}
+
+.chat-header {
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: white;
+}
+
+.chat-header p {
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+/* Zone de chat */
+#chatbox {
+  width: 100%;
+  height: calc(50vh - 100px);
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  padding: clamp(8px, 1vw, 10px);
+  font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+}
+
+/* Zone de texte de saisie des messages */
+#message {
+  width: 100%;
+  padding: clamp(8px, 1vw, 10px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: white; /* La couleur de la zone de texte */
+}
+
+/* Style des boutons envoyer et fermer, avec hover */
+#send,
+#close-chat {
+  display: inline-block;
+  padding: clamp(6px, 1vw, 8px) clamp(16px, 1.5vw, 20px);
+  margin-bottom: 10px;
+  background: #0ef; /* Couleur du bouton */
+  border-radius: 40px;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #0ef;
+  cursor: pointer;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+#send:hover,
+#close-chat:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
+}

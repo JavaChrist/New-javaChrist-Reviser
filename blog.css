@@ -1,0 +1,121 @@
+/* Style de la section du blog */
+.blog-home {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.blog-item.left {
+  flex-direction: row-reverse; /* Image à gauche, texte à droite */
+}
+
+.blog-item.right {
+  flex-direction: row; /* Image à droite, texte à gauche */
+}
+
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+.blog-content h2 {
+  font-size: 1.5rem;
+  color: #09484D;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.blog-content a {
+  font-size: 0.9rem;
+  color: #09484D;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* Style général pour les images */
+.blog-item img {
+  width: 350px;
+  height: auto;
+  margin: 0 20px;
+}
+
+/* Positionnement et rotation spécifique pour chaque image */
+.image1 {
+  transform: rotate(-15deg);
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.image2 {
+  transform: rotate(5deg); 
+  margin-top: 0px;
+  margin-right: 20px;
+  width: 500px;
+  height: auto;
+}
+
+.image3 {
+  transform: rotate(-15deg); 
+  margin-top: 15px;
+  margin-left: -10px;
+}
+
+/* Responsivité */
+@media (max-width: 1322px) {
+  .blog-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-item img {
+    margin: 0 auto 20px auto;
+    width: 50%;
+    transform: none;
+  }
+
+  .blog-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+.blog-item img {
+  display: none;
+}
+}
+
+@media (max-width: 650px) {
+  .blog-item {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .blog-item img {
+    width: 100%;
+  }
+
+  .blog-item::before {
+    display: none;
+  }
+}

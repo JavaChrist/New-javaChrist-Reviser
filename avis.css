@@ -1,0 +1,128 @@
+:root {
+--background: #111;
+--border-contrast: #2fe21f5f;
+--text-color: #fff;
+--text-color-darker: #f1f1f1;
+--quotes-contrast:  greenyellow; 
+--blurred-circle: #9fffb54d;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Helvetica, sans-serif;
+  background-color: var(--background);
+}
+
+.ai-badge {
+  z-index: 2;
+}
+
+.testimonials-section {
+  padding: 0 12px;
+}
+
+.vertical-marquee {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+}
+.vertical-marquee__blurred-circle {
+  display: block;
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--blurred-circle);
+  filter: blur(64px);
+}
+
+.vertical-marquee__blurred {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+/* top */
+.vertical-marquee__blurred--top {
+  top: 0;
+  box-shadow: 0 10px 10px 70px var(--background);
+}
+/* bottom */
+.vertical-marquee__blurred--bottom {
+  box-shadow: 0 -5px 10px 70px var(--background);
+  bottom: 0;
+}
+
+.vertical-marquee__slider {
+  animation: vertical-marquee 12.4s linear infinite;
+}
+@keyframes vertical-marquee {
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.vertical-marquee__panel {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 12px 22px;
+}
+
+.vertical-marquee__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  border: 2px solid var(--border-contrast);
+  border-radius: 10px;
+}
+
+.vertical-marquee__card-text {
+  color: var(--text-color);
+  line-height: 1.4;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.vertical-marquee__green-quotes {
+  color: var(--quotes-contrast);
+}
+.vertical-marquee__card-author {
+  font-family: Raleway, sans-serif;
+  margin-top: auto;
+  font-style: italic;
+  color: var(--text-color-darker);
+}
+
+@media (max-width: 1000px) {
+  .vertical-marquee__slider {
+    animation: vertical-marquee 30.4s linear infinite;
+  }
+}
+@media (max-width: 500px) {
+  .vertical-marquee__slider {
+    animation: vertical-marquee 40.4s linear infinite;
+  }
+  .vertical-marquee__panel {
+    padding: 12px 2px;
+  }
+  .vertical-marquee__card-text {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .vertical-marquee__card-author {
+    font-size: 14px;
+  }
+}

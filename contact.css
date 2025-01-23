@@ -1,0 +1,372 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+
+}
+
+#rain-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.raindrop {
+  position: absolute;
+  background-color: rgba(0, 119, 255, 0.6);
+  width: 2px;
+  height: 20px;
+  animation: rise linear infinite;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.8);
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  padding-left: 30px;
+  margin-top: 300px;
+}
+
+.contact h2 {
+  font-size: 90px;
+  line-height: 1;
+  color: rgb(59, 57, 57);
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.contact-text h2 span {
+  color: #0ef;
+  opacity: 0;
+  animation: slideRight 4s ease forwards;
+  animation-delay: 2s;
+}
+.contact-text {
+  margin-left: 30px;
+}
+
+.contact-text h4 {
+  margin: 15px 0;
+  color: rgb(59, 57, 57);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-text p {
+  color: rgb(59, 57, 57);
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+
+.contact-list {
+  margin-bottom: 3rem;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+  color: rgb(59, 57, 57);
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-list i {
+  display: inline-block;
+  color: #0ef;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.contact-list li a:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: #0ef;
+}
+
+.contact-icons i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: 0.5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.contact-icons i:hover {
+  background: #0ef;
+  color: #000;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form form {
+  position: relative;
+}
+
+.contact-form form input,
+form textarea {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 18px;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #555557;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 220px;
+}
+
+.btn-box,
+.contact-form form .send {
+  display: inline-block;
+  padding: 14px 60px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  border: 1px solid #0ef;
+}
+
+.btn-box:hover,
+.contact-form form .send:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
+  background: #0ef;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.contact-form form input[type="submit"] {
+  display: inline-block;
+  padding: 14px 60px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  border: 1px solid #0ef;
+  cursor: pointer;
+}
+
+.contact-form form input[type="submit"]:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
+  background: #0ef;
+  color: #000;
+  border: 2px solid #000;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinHorizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(1440deg);
+  }
+}
+
+@media (max-width: 1500px) {
+  .contact-text h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(7, 85, 91, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+  }
+  body {
+    overflow-y: auto;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(255, 106, 0);
+  }
+
+  .navbar.active {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    padding: 0;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .contact h2 {
+    font-size: 50px;
+  }
+
+  .contact-text p {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+  }
+
+  .contact-icons {
+    justify-content: center;
+  }
+
+  .contact-icons i {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 10px;
+  }
+
+  .contact h2 {
+    font-size: 40px;
+  }
+
+  .contact-text h4 {
+    font-size: 18px;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    padding: 10px;
+  }
+
+  .btn-box,
+  .contact-form form .send {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+}
+

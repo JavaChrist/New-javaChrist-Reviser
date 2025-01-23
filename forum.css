@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.forum-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.forum-posts {
+    margin-bottom: 20px;
+}
+
+.forum-post {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-content {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.post-timestamp {
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.email-info {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 0.8em;
+}
+
+#new-post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-content {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#enable-notifications {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#enable-notifications i {
+    font-size: 1.2rem;
+}
+
+#enable-notifications:hover {
+    background-color: #45a049;
+}
+
+#enable-notifications:not(.notifications-enabled) {
+    background-color: #757575;
+}
+
+#enable-notifications:not(.notifications-enabled):hover {
+    background-color: #616161;
+}
+
+.notifications-enabled {
+    background-color: #2196F3 !important;
+}
+
+.notification-info {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.notification-wrapper {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.warning-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+}
+
+.warning-message i {
+    font-size: 24px;
+}
+
+.warning-message p {
+    margin: 0;
+}
+
+.adsbox {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
