@@ -21,7 +21,8 @@
   <link rel="shortcut icon" href="/assets/logo/favicon.ico" type="image/x-icon" />
 
   <!-- Meta Description for SEO -->
-  <meta name="description" content="Participez aux discussions sur le développement web, partagez vos expériences et posez vos questions dans notre forum dédié à la communauté web." />
+  <meta name="description"
+    content="Participez aux discussions sur le développement web, partagez vos expériences et posez vos questions dans notre forum dédié à la communauté web." />
 
   <!-- Open Graph Data (Facebook, LinkedIn) -->
   <meta property="og:url" content="https://www.javachrist.fr" />
@@ -67,10 +68,15 @@
   <script src="/forum.js" type="module" defer></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
-    (function() {
+    (function () {
       emailjs.init("VOTRE_CLE_PUBLIQUE_EMAILJS");
     })();
   </script>
+
+  <!-- Hreflang tags for SEO -->
+  <link rel="alternate" hreflang="fr" href="https://www.javachrist.fr/fr/forum.html" />
+  <link rel="alternate" hreflang="en" href="https://www.javachrist.fr/en/forum.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.javachrist.fr/" />
 </head>
 
 <body>
@@ -120,7 +126,7 @@
       <a href="/en/forum.html" style="--i: 8">Forum</a>
       <a href="/index.html" style="--i: 9">Français</a>
       <a href="/en/login-en.html" style="--i: 10">Login</a>
-  </nav>
+    </nav>
     <div class="hamburger" id="hamburger">
       <i class="bx bx-menu"></i>
     </div>
@@ -149,27 +155,27 @@
   <footer>
     <p id="copyright">&copy; <span id="year"></span> JavaChrist. All rights reserved.</p>
     <div>
-        <a href="/en/legal-notice.html" class="license-link">
-            Legal notice |
-        </a>
-        <a href="/en/privacy-policy.html" class="license-link">Privacy policy</a>
+      <a href="/en/legal-notice.html" class="license-link">
+        Legal notice |
+      </a>
+      <a href="/en/privacy-policy.html" class="license-link">Privacy policy</a>
     </div>
 
     <div class="home-sci">
-        <a href="https://twitter.com/Mis7erC" target="_blank" rel="noopener noreferrer" style="--i: 8">
-            <i class="bx bxl-twitter" aria-hidden="true"></i>
-            <span class="sr-only">Follow me on Twitter</span>
-        </a>
-        <a href="https://www.linkedin.com/in/javachrist/" target="_blank" rel="noopener noreferrer" style="--i: 9">
-            <i class="bx bxl-linkedin" aria-hidden="true"></i>
-            <span class="sr-only">Connect with me on LinkedIn</span>
-        </a>
-        <a href="https://github.com/JavaChrist" target="_blank" rel="noopener noreferrer" style="--i: 10">
-            <i class="bx bxl-github" aria-hidden="true"></i>
-            <span class="sr-only">Check out my projects on GitHub</span>
-        </a>
+      <a href="https://twitter.com/Mis7erC" target="_blank" rel="noopener noreferrer" style="--i: 8">
+        <i class="bx bxl-twitter" aria-hidden="true"></i>
+        <span class="sr-only">Follow me on Twitter</span>
+      </a>
+      <a href="https://www.linkedin.com/in/javachrist/" target="_blank" rel="noopener noreferrer" style="--i: 9">
+        <i class="bx bxl-linkedin" aria-hidden="true"></i>
+        <span class="sr-only">Connect with me on LinkedIn</span>
+      </a>
+      <a href="https://github.com/JavaChrist" target="_blank" rel="noopener noreferrer" style="--i: 10">
+        <i class="bx bxl-github" aria-hidden="true"></i>
+        <span class="sr-only">Check out my projects on GitHub</span>
+      </a>
     </div>
-</footer>
+  </footer>
 
   <script src="/script.js"></script>
 </body>
