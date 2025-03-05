@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Rediriger automatiquement toutes les requêtes vers www.javachrist.fr en HTTPS
+RewriteCond %{HTTP_HOST} ^javachrist\.fr [NC]
+RewriteRule ^(.*)$ https://www.javachrist.fr/$1 [L,R=301]
+
+# Forcer HTTPS (au cas où ce n'est pas déjà activé)
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://www.javachrist.fr%{REQUEST_URI} [L,R=301]
