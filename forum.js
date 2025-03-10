@@ -96,11 +96,14 @@ async function addPost(content, email) {
 
             if (!response.ok) {
                 console.warn('Notification non envoyée, mais message enregistré');
+                alert('Notification non envoyée, mais message enregistré');
             } else {
                 console.log('Notification envoyée avec succès');
+                alert('Notification envoyée avec succès');
             }
         } catch (error) {
             console.warn('Erreur notification:', error);
+            alert('Erreur notification: ' + error.message);
             // On continue même si la notification échoue
         }
 

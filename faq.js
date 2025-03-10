@@ -1,3 +1,21 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { getFirestore, doc, getDoc, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "actual-api-key-from-firebase-console",
+    authDomain: "javachrist-b02f3.firebaseapp.com",
+    projectId: "javachrist-b02f3",
+    storageBucket: "javachrist-b02f3.firebasestorage.app",
+    messagingSenderId: "987983540724",
+    appId: "1:987983540724:web:fa97255d9ae41f03ad89a1",
+    measurementId: "G-9C8Y48XBHR"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 const questionTogglers = document.querySelectorAll(".faq__question-toggler")
 questionTogglers.forEach(toggler => toggler.addEventListener("click", handleQuestionToggle))
 
@@ -20,16 +38,23 @@ let globalStats = {
 };
 
 // Charge les statistiques globales au chargement de la page
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
     const savedStats = localStorage.getItem('faqGlobalStats');
     if (savedStats) {
         globalStats = JSON.parse(savedStats);
-        updateGlobalFeedbackDisplay();
+    } else {
+        // Fetch stats from Firestore
+        const docRef = doc(db, "faqStats", "global");
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+            globalStats = docSnap.data();
+        }
     }
+    updateGlobalFeedbackDisplay();
 });
 
 document.querySelectorAll('.feedback-btn').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', async function() {
         if (this.disabled) return;
         
         const container = this.closest('.feedback-container');
@@ -51,6 +76,10 @@ document.querySelectorAll('.feedback-btn').forEach(button => {
         
         // Sauvegarde dans localStorage
         localStorage.setItem('faqGlobalStats', JSON.stringify(globalStats));
+        
+        // Update stats in Firestore
+        const docRef = doc(db, "faqStats", "global");
+        await setDoc(docRef, globalStats, { merge: true });
     });
 });
 
